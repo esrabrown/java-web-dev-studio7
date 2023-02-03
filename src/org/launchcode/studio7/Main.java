@@ -8,5 +8,18 @@ public class Main {
 
         // TODO: Call each CD and DVD method to verify that they work as expected.
 
+   CD myCd = new CD(500, "spinning", 0.7, "CD", "music", "CD-DA");
+   DVD myDvd = new DVD(1600, "spinning", 4.7, "DVD", "movie", "DVD-R/RW");
+   myCd.spinDisc();
+   myCd.writeData();
+   myCd.readData();
+
+   myDvd.spinDisc();
+   myDvd.writeData();
+   myDvd.readData();
+
+
+   myCd.reportData();
+   myDvd.reportData();
     }
 }
